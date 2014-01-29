@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://jenniferdewalt.com/random_background.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Random Color Background | Jennifer Dewalt</title>
+  <link rel="stylesheet" href="http://jenniferdewalt.com/css/reset.css">
+  <link rel="stylesheet" href="http://jenniferdewalt.com/css/random_background.css">
+    <script type="text/javascript" async="" src="./Random_files/ga.js"></script><script src="./js/jquery.min.js"></script>
+   <SCRIPT language=javascript>
+function needReload(){
+var tid = setTimeout(needReload, 2000);
+   $(document).ready(function () {
+	
+	function randomColor() {
+		return '#' + Math.random().toString(16).slice(2, 8);
+	};
+
+		$('body').css('background', randomColor());
+		tid = setTimeout(needReload,2000);
+		clearInterval(tid);
+	
+});
+}
+</SCRIPT>
+</head>
+<BODY onload="needReload()">
+
+</body></html>
